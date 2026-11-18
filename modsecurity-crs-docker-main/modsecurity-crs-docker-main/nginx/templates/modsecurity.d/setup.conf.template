@@ -1,0 +1,12 @@
+# 啟用 ModSecurity
+SecRuleEngine On
+
+# CRS 基本規則
+Include /etc/modsecurity.d/owasp-crs/crs-setup.conf
+Include /etc/modsecurity.d/owasp-crs/rules/*.conf
+
+# 啟用 audit log
+SecAuditEngine On
+SecAuditLog /tmp/modsec_audit.log
+SecAuditLogParts ABIJDEFHZ
+SecAuditLogType Serial

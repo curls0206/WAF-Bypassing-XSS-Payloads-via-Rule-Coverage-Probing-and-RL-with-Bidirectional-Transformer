@@ -1,0 +1,168 @@
+======================================================================
+  WAF TEST RESULTS SUMMARY
+  ModSecurity CRS - PARANOIA Level 2
+  Target: http://localhost
+  Time: 2026-03-23 23:50:13
+======================================================================
+
+OVERALL STATISTICS
+────────────────────────────────────────
+  Total Payloads Tested:  1884
+  Blocked by WAF (403):   1049
+  Passed WAF (200):       835
+  Errors (timeout/etc):   0
+  Block Rate:             55.7%
+
+CONFUSION MATRIX (WAF as Malicious Detector)
+────────────────────────────────────────
+                    Predicted
+                  Blocked  Passed
+  Actual Malicious     992     517   (TP / FN)
+  Actual Benign         57     318   (FP / TN)
+
+METRICS
+────────────────────────────────────────
+  Accuracy:           69.5%
+  Precision:          94.6%
+  Recall (Detection): 65.7%
+  F1 Score:           77.6%
+  False Positive Rate:15.2%
+  False Negative Rate:34.3%
+
+DETECTION BY ENCODING TYPE
+──────────────────────────────────────────────────────────────────────
+  Encoding Type                       Total  Block   Pass  Block%   Acc%
+  ─────────────────────────────────────────────────────────────────
+  Advanced Evasion                        3      1      2   33.3%  33.3%
+  Base64 Encoding                        31     31      0  100.0%  83.9%
+  CRLF Injection                          8      0      8    0.0%  50.0%
+  CSP Bypass                              5      5      0  100.0%  20.0%
+  Cloudflare Bypass                      25     22      3   88.0%  72.0%
+  Command Injection                      12      3      9   25.0%  66.7%
+  Command Injection - Encoded            14      2     12   14.3%  42.9%
+  DOM Evasion                             3      3      0  100.0% 100.0%
+  DOM-based                              18      7     11   38.9%  22.2%
+  Double Encoding                        19      0     19    0.0%  68.4%
+  Extreme Evasion                        34     22     12   64.7%  67.6%
+  HTML Entity Encoding                   10     10      0  100.0% 100.0%
+  HTML Hex Entity Encoding                8      8      0  100.0% 100.0%
+  HTTP Header Injection - Advanced       31      2     29    6.5%  29.0%
+  HTTP Parameter Pollution               26      0     26    0.0%  38.5%
+  HTTP Request Smuggling                 12      1     11    8.3%  91.7%
+  Hex Encoding                            3      3      0  100.0% 100.0%
+  HttpParams Dataset                    629    419    210   66.6%  82.5%
+  IP Bypass                              22      0     22    0.0%  45.5%
+  JS Obfuscation                         11     11      0  100.0% 100.0%
+  JavaScript Protocol                    11      8      3   72.7%  90.9%
+  LDAP Injection                         14      0     14    0.0%  78.6%
+  Local File Inclusion                    6      2      4   33.3%  33.3%
+  Mixed Case                             19     19      0  100.0%  68.4%
+  Mixed Encoding                          8      7      1   87.5%  62.5%
+  NoSQL Injection                        15      0     15    0.0%  66.7%
+  NoSQL Injection - Advanced             13      1     12    7.7%  38.5%
+  Open Redirect                           7      1      6   14.3%  28.6%
+  Padding Injection                       4      4      0  100.0% 100.0%
+  Path Traversal                         17      4     13   23.5%  94.1%
+  Path Traversal - Encoded               17      8      9   47.1%  76.5%
+  Polyglot                                5      5      0  100.0% 100.0%
+  PortSwigger Dataset                   434    299    135   68.9%  68.9%
+  Raw                                    24     24      0  100.0%  50.0%
+  SQL Injection                          33      1     32    3.0%  45.5%
+  SQL Injection - Advanced Bypass        28      3     25   10.7%  39.3%
+  SSRF                                   23      0     23    0.0%  43.5%
+  SSRF - Protocol Smuggling              23      1     22    4.3%  21.7%
+  SSTI                                   18      0     18    0.0%  11.1%
+  SSTI - Framework Specific              17      4     13   23.5%  52.9%
+  Segmented Injection                    12     12      0  100.0% 100.0%
+  Sensitive Files                        29      0     29    0.0%  27.6%
+  URL Encoding                           19     18      1   94.7%  26.3%
+  UTF8/Unicode Bypass                    13      0     13    0.0%  76.9%
+  Unicode Encoding                       23     23      0  100.0%  78.3%
+  Unusual Syntax                          7      7      0  100.0% 100.0%
+  User-Agent                             24      3     21   12.5%  54.2%
+  Web Cache Poisoning                    18      0     18    0.0%  50.0%
+  Whitespace Insertion                   10     10      0  100.0% 100.0%
+  XSS                                    19     10      9   52.6% 100.0%
+  XSS - Modern Bypasses                  19     14      5   73.7%  94.7%
+  XXE                                    20      6     14   30.0%  80.0%
+  XXE - Advanced Vectors                 11      5      6   45.5%  72.7%
+
+DETECTION BY SCENARIO
+──────────────────────────────────────────────────────────────────────
+  Scenario                       Total  Blocked   Passed  Block%
+  ────────────────────────────────────────────────────────────
+  CSP繞過                              5        5        0  100.0%
+  Cloudflare WAF繞過                  82       79        3   96.3%
+  DOM-based XSS                     29       18       11   62.1%
+  Diverse JSON (Advanced) - Command Injection - Encoded    14        2       12   14.3%
+  Diverse JSON (Advanced) - HTTP Header Injection - Advanced    31        2       29    6.5%
+  Diverse JSON (Advanced) - NoSQL Injection - Advanced    13        1       12    7.7%
+  Diverse JSON (Advanced) - Path Traversal - Encoded    17        8        9   47.1%
+  Diverse JSON (Advanced) - SQL Injection - Advanced Bypass    28        3       25   10.7%
+  Diverse JSON (Advanced) - SSRF - Protocol Smuggling    23        1       22    4.3%
+  Diverse JSON (Advanced) - SSTI - Framework Specific    17        4       13   23.5%
+  Diverse JSON (Advanced) - XSS - Modern Bypasses    19       14        5   73.7%
+  Diverse JSON (Advanced) - XXE - Advanced Vectors    11        5        6   45.5%
+  Diverse JSON (Basic) - CRLF Injection     8        0        8    0.0%
+  Diverse JSON (Basic) - Command Injection    12        3        9   25.0%
+  Diverse JSON (Basic) - HTTP Parameter Pollution    26        0       26    0.0%
+  Diverse JSON (Basic) - HTTP Request Smuggling    12        1       11    8.3%
+  Diverse JSON (Basic) - IP Bypass    22        0       22    0.0%
+  Diverse JSON (Basic) - LDAP Injection    14        0       14    0.0%
+  Diverse JSON (Basic) - Local File Inclusion     6        2        4   33.3%
+  Diverse JSON (Basic) - NoSQL Injection    15        0       15    0.0%
+  Diverse JSON (Basic) - Open Redirect     7        1        6   14.3%
+  Diverse JSON (Basic) - Path Traversal    17        4       13   23.5%
+  Diverse JSON (Basic) - SQL Injection    33        1       32    3.0%
+  Diverse JSON (Basic) - SSRF       23        0       23    0.0%
+  Diverse JSON (Basic) - SSTI       18        0       18    0.0%
+  Diverse JSON (Basic) - Sensitive Files    29        0       29    0.0%
+  Diverse JSON (Basic) - UTF8/Unicode Bypass    13        0       13    0.0%
+  Diverse JSON (Basic) - User-Agent    24        3       21   12.5%
+  Diverse JSON (Basic) - Web Cache Poisoning    18        0       18    0.0%
+  Diverse JSON (Basic) - XSS        19       10        9   52.6%
+  Diverse JSON (Basic) - XXE        20        6       14   30.0%
+  ModSec CRS繞過                      48       34       14   70.8%
+  儲存型XSS                            13       13        0  100.0%
+  反射型XSS                          1198      829      369   69.2%
+
+BYPASSED PAYLOADS (Malicious that passed WAF)
+──────────────────────────────────────────────────────────────────────
+  Total bypassed: 517 / 1509 malicious payloads
+  [  26] [DOM-based                ] '-alert(1)-'
+  [  27] [DOM-based                ] ";alert(1)//
+  [  29] [DOM-based                ] window['al'+'ert'](document.domain)
+  [  31] [DOM-based                ] setTimeout('ale'+'rt(1)',0)
+  [  33] [DOM-based                ] eval?.('alert(1)')
+  [  34] [DOM-based                ] this[`al`+`ert`](1)
+  [  35] [DOM-based                ] self['\x61lert'](1)
+  [  36] [DOM-based                ] Reflect.apply(alert,window,[1])
+  [  37] [DOM-based                ] navigator['__proto__']['constructor']['constructor']('alert(1)')()
+  [  38] [DOM-based                ] crypto.subtle||alert(1)
+  [  39] [DOM-based                ] [].constructor.constructor('alert(1)')()
+  [  60] [Cloudflare Bypass        ] */alert(1)/*
+  [  76] [URL Encoding             ] %3Cdetails%20open%20ontoggle%3Dalert%281%29%3E
+  [  95] [Double Encoding          ] %253Cdetails%2520open%2520ontoggle%253Dalert%25281%2529%253E
+  [  96] [Double Encoding          ] %253Cmarquee%2520onstart%253Dalert%25281%2529%253E
+  [ 101] [Double Encoding          ] %253Cvideo%2520src%253Dx%2520onerror%253Dalert%25281%2529%253E
+  [ 102] [Double Encoding          ] %253Caudio%2520src%253Dx%2520onerror%253Dalert%25281%2529%253E
+  [ 103] [Double Encoding          ] %253Cselect%2520onfocus%253Dalert%25281%2529%2520autofocus%253E
+  [ 104] [Double Encoding          ] %253Csvg%253E%253Canimate%2520onbegin%253Dalert%25281%2529%2520attributeName%253...
+  [ 222] [Mixed Encoding           ] %3Cdetails%20open%20ontoggle%3D%26%23112%3Brompt(1)%3E
+  [ 239] [JavaScript Protocol      ] javascript:alert`1`
+  [ 262] [Advanced Evasion         ] %25%33%43%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45alert(1)...
+  [ 264] [Advanced Evasion         ] %3Cdetails%20open%20ontoggle%3D%5C%75%30%30%36%31%5C%75%30%30%36%63%5C%75%30%30%...
+  [ 478] [PortSwigger Dataset      ] <a href=# download="filename.html">Test</a>
+  [ 479] [PortSwigger Dataset      ] <img referrerpolicy="no-referrer" src="//portswigger-labs.net">
+  [ 491] [PortSwigger Dataset      ] +/v8
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+  [ 492] [PortSwigger Dataset      ] +/v9
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+  [ 493] [PortSwigger Dataset      ] +/v+
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+  [ 494] [PortSwigger Dataset      ] +/v/
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+  [ 496] [PortSwigger Dataset      ] <iframe sandbox src="//portswigger-labs.net"></iframe>
+  ... and 487 more (see waf_test_results.json)
+
+======================================================================

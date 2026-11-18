@@ -1,0 +1,20 @@
+services:
+  crs-nginx:
+    container_name: waf
+    restart: always
+    image: owasp/modsecurity-crs:nginx
+    ports:
+      - "8088:8080"
+    environment:
+      SERVERNAME: localhost
+      PARANOIA: 1
+      BLOCKING_PARANOIA: 1
+      ANOMALY_INBOUND: 10
+      ANOMALY_OUTBOUND: 4
+      REPORTING_LEVEL: 2
+      BACKEND: http://dummy
+    volumes:
+       - ./nginx/templates/modsecurity.d/setup.conf.template:/etc/nginx/templates/modsecurity.d/setup.conf.template
+  dummy:
+    image: traefik/whoami
+    container_name: dummy
